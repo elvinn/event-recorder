@@ -1,9 +1,13 @@
 import React from 'react';
-import './App.css';
+import { Button } from 'antd';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">事件记录</div>
+    <div className="App">
+      事件记录
+      <Button type="primary">Button</Button>
+    </div>
   );
 }
 
