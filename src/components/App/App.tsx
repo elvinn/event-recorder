@@ -1,12 +1,21 @@
 import React from 'react';
-import { Button } from 'antd';
-import './App.scss';
+import { Layout } from 'antd';
+
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+
+import './App.css';
+
+const { Content } = Layout;
 
 function App() {
   return (
-    <div className="App">
-      事件记录
-      <Button type="primary">Button</Button>
+    <div className='min-h-screen relative'>
+      <Header />
+      <Content className='pb-20'>
+        Content Here
+      </Content>
+      <Footer />
     </div>
   );
 }
